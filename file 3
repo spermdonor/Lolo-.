@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Cat Love Message</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+        }
+        .cat {
+            width: 200px;
+            height: auto;
+            animation: shake 0.5s infinite;
+        }
+        .message {
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(0); }
+            75% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.example.com/black-cat.gif" alt="Animated Black Cat" class="cat">
+        <div class="message">I love you lolo</div>
+    </div>
+</body>
+</html>
